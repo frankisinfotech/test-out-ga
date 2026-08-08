@@ -1,7 +1,7 @@
 name: ecommerce
 
 on: push
-
+ 
 jobs:
   buildimg:
     runs-on: self-hosted 
