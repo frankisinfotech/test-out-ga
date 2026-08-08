@@ -18,6 +18,6 @@ jobs:
 
     - name: buildimg
       run: |
-        sudo docker build -t reactappimg:${GITHUB_RUN_NUMBER} .
-        sudo docker tag reactappimg:${GITHUB_RUN_NUMBER} frankisinfotech/reactapp:${GITHUB_RUN_NUMBER}
-        sudo docker push frankisinfotech/reactapp:${GITHUB_RUN_NUMBER}
+        docker build -t reactappimg:${GITHUB_RUN_NUMBER} .
+        docker tag reactappimg:${GITHUB_RUN_NUMBER} frankisinfotech/reactapp:${GITHUB_RUN_NUMBER}
+        docker push frankisinfotech/reactapp:${GITHUB_RUN_NUMBER}
